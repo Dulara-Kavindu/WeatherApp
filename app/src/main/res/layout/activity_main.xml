@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latitude: "
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"/>
+
+        <TextView
+            android:id="@+id/longitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Longitude: "
+            android:layout_below="@id/latitude"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"/>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address: "
+            android:layout_below="@id/longitude"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"/>
+
+        <TextView
+            android:id="@+id/system_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="System Time: "
+            android:layout_below="@id/address"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"/>
+
+        <TextView
+            android:id="@+id/weather_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weather Info: "
+            android:layout_below="@id/system_time"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"/>
+
+        <Button
+            android:id="@+id/refresh_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refresh"
+            android:layout_below="@id/weather_info"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"/>
+    </RelativeLayout>
